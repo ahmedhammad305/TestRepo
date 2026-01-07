@@ -113,6 +113,12 @@ p {
     display: none;
   }
 }
+@media (max-width: 500px) {
+  #about {
+    padding: 4rem 1em !important;
+  }
+ 
+}
 
 .header__nav-link {
   color: #4A4A4A;
@@ -335,7 +341,7 @@ body.menu-open {
 
 /* Sections */
 .section {
-  padding: 6rem 2rem;
+  padding: 1rem 2rem;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -393,7 +399,7 @@ body.menu-open {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  padding: 6rem 2rem;
+  padding: 6rem 0em !important;
 }
 
 @media (max-width: 1024px) {
@@ -405,12 +411,23 @@ body.menu-open {
 
 .about__content h2 {
   margin-bottom: 2rem;
+  margin-bottom: 2rem;
+
+}
+@media (max-width: 500px) {
+  .about__content h2 {
+    text-align: center;
+    letter-spacing: 5px;  }
 }
 
 .about__content p {
   margin-bottom: 1rem;
 }
-
+@media (max-width: 500px) {
+  .about__content p {
+    text-align: center;
+}
+}
 .about__image {
   width: 100%;
   height: 400px;
@@ -524,7 +541,7 @@ body.menu-open {
 
 .partners-logos__logo {
   background-color: #FFFFFF;
-  padding: 1rem;
+  padding: 0rem;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -553,7 +570,7 @@ body.menu-open {
 
 /* Testimonials Carousel Section */
 .testimonials-carousel {
-  padding: 6rem 2rem;
+  padding: 6rem 0rem;
   background-color: #FAFAFA;
 }
 
@@ -639,6 +656,44 @@ body.menu-open {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.testimonials-carousel__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-carousel__avatar {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(198, 167, 94, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.testimonials-carousel__card:hover .testimonials-carousel__avatar {
+  transform: scale(1.05);
+  border-color: rgba(198, 167, 94, 0.5);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials-carousel__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.testimonials-carousel__card:hover .testimonials-carousel__avatar-img {
+  filter: brightness(1.1) contrast(1.05);
 }
 
 .testimonials-carousel__quote {
@@ -683,6 +738,56 @@ body.menu-open {
   background-color: #4A4A4A;
 }
 
+/* Enhanced responsive design for testimonials - wider cards on mobile */
+@media (max-width: 768px) {
+  .testimonials-carousel__card {
+    min-height: 320px;
+    padding: 2.5rem 3rem;
+    margin: 0 1rem;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .testimonials-carousel__avatar {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-carousel__quote {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-carousel__author {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-carousel__card {
+    min-height: 350px;
+    padding: 2.5rem 2rem;
+    margin: 0 0.5rem;
+    max-width: 320px;
+  }
+
+  .testimonials-carousel__avatar {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-carousel__quote {
+    font-size: 1.1rem;
+  }
+
+  .testimonials-carousel__author {
+    font-size: 0.95rem;
+  }
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -710,7 +815,18 @@ body.menu-open {
   color: #1F2A44;
   border: 2px solid #1F2A44;
 }
-
+@media (max-width: 500px) {
+  .btn--outline {
+    background-color: transparent;
+    color: #1F2A44;
+    border: 2px solid #1F2A44;
+    /* width: 100%; */
+    text-align: center;
+    width: fit-content;
+    display: block;
+    margin: auto;
+  }
+}
 .btn--outline:hover {
   background-color: #1F2A44;
   color: #FFFFFF;
@@ -2111,15 +2227,4 @@ body.menu-open {
     padding: 0.6rem;
     font-size: 0.9rem;
   }
-}
-
-@media (max-width: 767px) {
- .btn--outline {
-  display: block;
-    text-align: center;
-    width: fit-content;
-    margin: auto;
-    padding: 10px 37px;
-}
-
 }
