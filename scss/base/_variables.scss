@@ -1,0 +1,32 @@
+// Color System (Light Mode)
+$primary-bg: #FAFAFA;
+$secondary-bg: #F0F0F0;
+$card-bg: #FFFFFF;
+$text-heading: #1C1C1C;
+$text-body: #4A4A4A;
+$text-muted: #7A7A7A;
+$accent-gold: #C6A75E;
+$accent-navy: #1F2A44;
+$accent-dark-gray: #2B2B2B;
+
+// Typography
+$font-heading: 'Playfair Display', 'Georgia', serif;
+$font-body: 'Inter', 'Helvetica Neue', sans-serif;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xl: 6rem;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1440px;
+
+// Transitions
+$transition-fast: 200ms;
+$transition-normal: 300ms;
+$transition-slow: 400ms;
+$easing: cubic-bezier(0.4, 0, 0.2, 1);

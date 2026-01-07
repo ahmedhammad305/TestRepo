@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  padding: $spacing-sm $spacing-md;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all $transition-normal $easing;
+  cursor: pointer;
+
+  &--primary {
+    background-color: $accent-navy;
+    color: $card-bg;
+    border: 2px solid $accent-navy;
+
+    &:hover {
+      background-color: transparent;
+      color: $accent-navy;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $accent-navy;
+    border: 2px solid $accent-navy;
+
+    &:hover {
+      background-color: $accent-navy;
+      color: $card-bg;
+    }
+  }
+
+  &--gold {
+    background-color: $accent-gold;
+    color: $card-bg;
+    border: 2px solid $accent-gold;
+
+    &:hover {
+      background-color: transparent;
+      color: $accent-gold;
+    }
+  }
+}

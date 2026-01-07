@@ -1,0 +1,69 @@
+.footer {
+  background-color: $accent-dark-gray;
+  color: #E0E0E0;
+  padding: $spacing-xl $spacing-md;
+  margin-top: $spacing-xl;
+
+  &__container {
+    max-width: $breakpoint-desktop;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $spacing-lg;
+  }
+
+  &__column {
+    h3 {
+      color: $card-bg;
+      font-size: 1.1rem;
+      margin-bottom: $spacing-sm;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-xs;
+    }
+
+    a {
+      color: $text-muted;
+      font-size: 0.9rem;
+      transition: color $transition-fast $easing;
+
+      &:hover {
+        color: $card-bg;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: $spacing-sm;
+    margin-top: $spacing-sm;
+
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      transition: all $transition-fast $easing;
+
+      &:hover {
+        border-color: $accent-gold;
+        background-color: rgba(198, 167, 94, 0.1);
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: $spacing-lg;
+    padding-top: $spacing-md;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: $text-muted;
+    font-size: 0.85rem;
+  }
+}

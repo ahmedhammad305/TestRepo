@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Catalogues - Modern Interiors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">MODERN INTERIORS</a>
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="about.html" class="header__nav-link">About</a>
+        <a href="projects.html" class="header__nav-link">Projects</a>
+        <a href="catalogues.html" class="header__nav-link header__nav-link--active">Catalogues</a>
+        <a href="news.html" class="header__nav-link">News</a>
+        <a href="careers.html" class="header__nav-link">Careers</a>
+        <a href="contact.html" class="header__nav-link">Contact Us</a>
+      </nav>
+      <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="header__menu-toggle-icon header__menu-toggle-icon--hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span class="header__menu-toggle-icon header__menu-toggle-icon--close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu__overlay"></div>
+  <nav class="mobile-menu">
+    <div class="mobile-menu__nav">
+      <a href="index.html" class="mobile-menu__nav-link">Home</a>
+      <a href="about.html" class="mobile-menu__nav-link">About</a>
+      <a href="projects.html" class="mobile-menu__nav-link">Projects</a>
+      <a href="catalogues.html" class="mobile-menu__nav-link mobile-menu__nav-link--active">Catalogues</a>
+      <a href="news.html" class="mobile-menu__nav-link">News</a>
+      <a href="careers.html" class="mobile-menu__nav-link">Careers</a>
+      <a href="contact.html" class="mobile-menu__nav-link">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="section section--hero">
+    <div class="hero">
+      <div class="hero__background"></div>
+      <div class="hero__content fade-in">
+        <h1 class="hero__title">OUR CATALOGUES</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalogues Intro Section -->
+  <section class="section">
+    <div class="catalogues-intro fade-in">
+      <div class="catalogues-intro__content">
+        <h2>Curated Collections</h2>
+        <p>
+          Discover our meticulously curated design catalogues, featuring premium materials, innovative solutions,
+          and timeless aesthetics that elevate every space to new levels of sophistication.
+        </p>
+        <p>
+          From furniture and lighting to flooring and decor, our comprehensive collections offer endless
+          possibilities for creating spaces that reflect your unique vision and lifestyle.
+        </p>
+        <div class="catalogues-intro__stats">
+          <div class="catalogues-intro__stat">
+            <span class="catalogues-intro__stat-number">200+</span>
+            <span class="catalogues-intro__stat-label">Design Products</span>
+          </div>
+          <div class="catalogues-intro__stat">
+            <span class="catalogues-intro__stat-number">50+</span>
+            <span class="catalogues-intro__stat-label">Material Options</span>
+          </div>
+          <div class="catalogues-intro__stat">
+            <span class="catalogues-intro__stat-number">15+</span>
+            <span class="catalogues-intro__stat-label">Brand Partners</span>
+          </div>
+        </div>
+      </div>
+      <div class="catalogues-intro__image">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=500&fit=crop"
+             alt="Premium interior design materials and collections showcase"
+             class="catalogues-intro__img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalogues Section -->
+  <section id="catalogues" class="section">
+    <div class="catalogues">
+      <h2 class="catalogues__title fade-in">Design Catalogues</h2>
+      <p class="catalogues__subtitle fade-in">
+        Explore our curated collection of premium design catalogues, showcasing the latest trends and innovations in interior design.
+      </p>
+
+      <div class="catalogues__grid">
+        <!-- Furniture Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop"
+                 alt="Modern furniture collection"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <span class="catalogue-card__badge">New</span>
+                <h3 class="catalogue-card__title">Modern Furniture</h3>
+                <p class="catalogue-card__description">Contemporary furniture designs for every space</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lighting Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&h=400&fit=crop"
+                 alt="Elegant lighting fixtures"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <span class="catalogue-card__badge">Popular</span>
+                <h3 class="catalogue-card__title">Lighting Solutions</h3>
+                <p class="catalogue-card__description">Illuminating designs for modern interiors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flooring Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop"
+                 alt="Premium flooring options"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <h3 class="catalogue-card__title">Flooring Collection</h3>
+                <p class="catalogue-card__description">Quality flooring solutions for every style</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wall Coverings Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop"
+                 alt="Wall decoration options"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <span class="catalogue-card__badge">Trending</span>
+                <h3 class="catalogue-card__title">Wall Coverings</h3>
+                <p class="catalogue-card__description">Transform your walls with our premium collection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kitchen Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop"
+                 alt="Modern kitchen designs"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <h3 class="catalogue-card__title">Kitchen Designs</h3>
+                <p class="catalogue-card__description">Functional and beautiful kitchen solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bathroom Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop"
+                 alt="Luxury bathroom fixtures"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <span class="catalogue-card__badge">Premium</span>
+                <h3 class="catalogue-card__title">Bathroom Collection</h3>
+                <p class="catalogue-card__description">Spa-like bathroom experiences</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Office Furniture Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop"
+                 alt="Office furniture solutions"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <h3 class="catalogue-card__title">Office Furniture</h3>
+                <p class="catalogue-card__description">Ergonomic designs for productive workspaces</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outdoor Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&h=400&fit=crop"
+                 alt="Outdoor furniture collection"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <span class="catalogue-card__badge">Seasonal</span>
+                <h3 class="catalogue-card__title">Outdoor Living</h3>
+                <p class="catalogue-card__description">Extend your living space outdoors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decor Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop"
+                 alt="Home decor accessories"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <h3 class="catalogue-card__title">Home Decor</h3>
+                <p class="catalogue-card__description">Finishing touches for perfect interiors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart Home Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop"
+                 alt="Smart home technology"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <span class="catalogue-card__badge">Innovation</span>
+                <h3 class="catalogue-card__title">Smart Home</h3>
+                <p class="catalogue-card__description">Integrated technology for modern living</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commercial Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&h=400&fit=crop"
+                 alt="Commercial space designs"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <h3 class="catalogue-card__title">Commercial Spaces</h3>
+                <p class="catalogue-card__description">Professional interiors for business environments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Luxury Catalogue -->
+        <div class="catalogue-card fade-in">
+          <div class="catalogue-card__image-container">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&h=400&fit=crop"
+                 alt="Luxury interior finishes"
+                 class="catalogue-card__image">
+            <div class="catalogue-card__overlay">
+              <div class="catalogue-card__content">
+                <span class="catalogue-card__badge">Luxury</span>
+                <h3 class="catalogue-card__title">Premium Finishes</h3>
+                <p class="catalogue-card__description">Exclusive materials and finishes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="footer__container">
+      <div class="footer__column">
+        <h3>Modern Interiors</h3>
+        <p style="color: #7A7A7A; margin-top: 1rem; line-height: 1.8;">
+          Creating timeless spaces through architectural excellence and elegant design.
+        </p>
+      </div>
+      <div class="footer__column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="catalogues.html">Catalogues</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:info@moderninteriors.com">info@moderninteriors.com</a></li>
+          <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+          <li style="color: #7A7A7A; margin-top: 0.5rem;">123 Design Street<br>New York, NY 10001</li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3>Follow Us</h3>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">LI</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Modern Interiors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

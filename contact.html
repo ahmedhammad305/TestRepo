@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Modern Interiors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">MODERN INTERIORS</a>
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="about.html" class="header__nav-link">About</a>
+        <a href="projects.html" class="header__nav-link">Projects</a>
+        <a href="catalogues.html" class="header__nav-link">Catalogues</a>
+        <a href="news.html" class="header__nav-link">News</a>
+        <a href="careers.html" class="header__nav-link">Careers</a>
+        <a href="contact.html" class="header__nav-link header__nav-link--active">Contact Us</a>
+      </nav>
+      <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="header__menu-toggle-icon header__menu-toggle-icon--hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span class="header__menu-toggle-icon header__menu-toggle-icon--close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu__overlay"></div>
+  <nav class="mobile-menu">
+    <div class="mobile-menu__nav">
+      <a href="index.html" class="mobile-menu__nav-link">Home</a>
+      <a href="about.html" class="mobile-menu__nav-link">About</a>
+      <a href="projects.html" class="mobile-menu__nav-link">Projects</a>
+      <a href="catalogues.html" class="mobile-menu__nav-link">Catalogues</a>
+      <a href="#news" class="mobile-menu__nav-link">News</a>
+      <a href="#careers" class="mobile-menu__nav-link">Careers</a>
+      <a href="contact.html" class="mobile-menu__nav-link mobile-menu__nav-link--active">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="section section--hero section--hero--contact">
+    <div class="hero">
+      <div class="hero__background hero__background--contact"></div>
+      <div class="hero__content fade-in">
+        <h1 class="hero__title">CONTACT US</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section--contact">
+    <div class="contact">
+      <div class="contact__container">
+        <!-- Contact Form Section -->
+        <div class="contact__form-section">
+          <div class="contact__form-header">
+            <h2 class="contact__headline">WE WOULD BE GLAD TO RECEIVE YOUR INQUIRIES</h2>
+            <p class="contact__subtext">
+              Have a project in mind? Let's discuss how we can bring your vision to life.
+              Our team is ready to provide expert consultation and tailored solutions.
+            </p>
+          </div>
+
+          <form class="contact__form" action="#" method="POST">
+            <div class="contact__form-group">
+              <label for="name" class="contact__label">Name</label>
+              <input type="text" id="name" name="name" class="contact__input" required>
+            </div>
+
+            <div class="contact__form-group">
+              <label for="mobile" class="contact__label">Mobile</label>
+              <input type="tel" id="mobile" name="mobile" class="contact__input" required>
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__label">E-Mail</label>
+              <input type="email" id="email" name="email" class="contact__input" required>
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__label">Message</label>
+              <textarea id="message" name="message" class="contact__textarea" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="contact__submit-btn">Send Message</button>
+          </form>
+
+        </div>
+
+        <!-- Map Section -->
+        <div class="contact__map-section">
+          <div class="contact__map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.966309248418!2d-74.0042587841752!3d40.70583194563507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316c45e5d%3A0x1b5430d6e6f0c4b7!2s123%20Design%20Street%2C%20New%20York%2C%20NY%2010001%2C%20USA!5e0!3m2!1sen!2sus!4v1640995200000!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <!-- Map Info Card -->
+            <div class="contact__map-card">
+              <div class="contact__map-card-header">
+                <h4 class="contact__map-card-title">Modern Interiors Office</h4>
+                <div class="contact__map-rating">
+                  <span class="contact__map-stars">★★★★☆</span>
+                  <span class="contact__map-rating-text">4.0</span>
+                </div>
+              </div>
+              <div class="contact__map-card-body">
+                <p class="contact__map-address">123 Design Street, New York, NY 10001</p>
+                <p class="contact__map-plus-code">Plus Code: 87G7+XX New York</p>
+                <a href="#" class="contact__map-link">View larger map</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__column">
+        <h3>Modern Interiors</h3>
+        <p style="color: #7A7A7A; margin-top: 1rem; line-height: 1.8;">
+          Creating timeless spaces through architectural excellence and elegant design.
+        </p>
+      </div>
+      <div class="footer__column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="catalogues.html">Catalogues</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:info@moderninteriors.com">info@moderninteriors.com</a></li>
+          <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+          <li style="color: #7A7A7A; margin-top: 0.5rem;">123 Design Street<br>New York, NY 10001</li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3>Follow Us</h3>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">LI</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Modern Interiors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

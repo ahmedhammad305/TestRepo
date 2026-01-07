@@ -1,0 +1,189 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(250, 250, 250, 0.95);
+  backdrop-filter: blur(10px);
+  padding: $spacing-sm $spacing-md;
+  transition: background-color $transition-normal $easing;
+
+  &__container {
+    max-width: $breakpoint-desktop;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $text-heading;
+    letter-spacing: 0.05em;
+  }
+
+  &__nav {
+    display: flex;
+    gap: $spacing-md;
+    align-items: center;
+
+    @media (max-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  &__nav-link {
+    color: $text-body;
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: relative;
+    transition: color $transition-fast $easing;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $accent-gold;
+      transition: width $transition-normal $easing;
+    }
+
+    &:hover {
+      color: $text-heading;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__menu-toggle {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: $breakpoint-tablet) {
+      display: flex;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity $transition-normal $easing,
+                  visibility $transition-normal $easing;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+
+      &--close {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: row;
+
+        svg {
+          width: 24px;
+          height: 24px;
+          stroke: $text-heading;
+        }
+      }
+
+      &--hamburger {
+        span {
+          width: 25px;
+          height: 2px;
+          background-color: $text-heading;
+          display: block;
+        }
+      }
+    }
+
+    &.active {
+      .header__menu-toggle-icon--hamburger {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .header__menu-toggle-icon--close {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+// Mobile Menu
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 400px;
+  height: 100vh;
+  background-color: $card-bg;
+  z-index: 1000;
+  transition: right $transition-slow $easing;
+  padding: $spacing-xl $spacing-md;
+  box-shadow: -2px 0 20px rgba(0, 0, 0, 0.1);
+
+  &.active {
+    right: 0;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity $transition-normal $easing, visibility $transition-normal $easing;
+    z-index: 999;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+    margin-top: $spacing-xl;
+  }
+
+  &__nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $text-heading;
+    padding: $spacing-sm 0;
+    border-bottom: 1px solid $secondary-bg;
+    transition: color $transition-fast $easing;
+
+    &:hover {
+      color: $accent-gold;
+    }
+  }
+}
+
+body.menu-open {
+  overflow: hidden;
+}

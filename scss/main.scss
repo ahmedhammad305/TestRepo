@@ -1,0 +1,29 @@
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sections';
+
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/gallery';
+
+// Utility classes
+.container {
+  max-width: $breakpoint-desktop;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s $easing, transform 0.6s $easing;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
