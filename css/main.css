@@ -2112,3 +2112,14 @@ body.menu-open {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 767px) {
+ .btn--outline {
+  display: block;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 37px;
+}
+
+}
